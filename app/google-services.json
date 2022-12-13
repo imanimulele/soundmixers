@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "832584621796",
+    "project_id": "soundmixers-e62e8",
+    "storage_bucket": "soundmixers-e62e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832584621796:android:b04a42bace628a46d056f1",
+        "android_client_info": {
+          "package_name": "com.example.smixers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "832584621796-abvc5vgscmnlcn2gu2ttf61n47m09ft2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoDMvkXMp-EpWyxsMjSxpz6zuqevGCsLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "832584621796-abvc5vgscmnlcn2gu2ttf61n47m09ft2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

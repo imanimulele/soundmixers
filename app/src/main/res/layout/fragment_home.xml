@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.HomeFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <WebView
+            android:id="@+id/home_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="WebViewLayout"/>
+
+        <LinearLayout
+            android:id="@+id/lyt_progress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/spacing_medium"
+            android:orientation="vertical">
+
+            <ProgressBar
+                style="@style/Widget.AppCompat.ProgressBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:indeterminate="true" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+<!--    <androidx.core.widget.NestedScrollView-->
+<!--        android:id="@+id/nested_scroll_view"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:background="@android:color/white"-->
+<!--        android:clipToPadding="false"-->
+<!--        android:fitsSystemWindows="true"-->
+<!--        android:scrollbars="none"-->
+<!--        android:scrollingCache="true"-->
+<!--        app:layout_behavior="@string/appbar_scrolling_view_behavior">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="vertical"-->
+<!--                android:padding="@dimen/spacing_large">-->
+
+<!--                <WebView-->
+<!--                    android:id="@+id/home_layout"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    tools:ignore="WebViewLayout"/>-->
+
+
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Fusce Aliquam Blandit? Urna Quis Pulvinar. Donec Luctus Tincidunt eu Condimentum"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAppearance="@style/TextAppearance.AppCompat.Headline"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/grey_90"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/spacing_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Quisque sapien lorem, vestibulum vitae justo eget, fringilla eleifend nisi. Nam fermentum ipsum vitae ligula"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/grey_90"&ndash;&gt;-->
+<!--&lt;!&ndash;                    app:fontFamily="sans-serif-medium" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <View&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="1dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginBottom="@dimen/spacing_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/spacing_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:background="@color/grey_20" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:lineSpacingExtra="@dimen/spacing_medium"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="@string/long_lorem_ipsum"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/grey_80" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="200dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/spacing_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:scaleType="centerCrop"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:src="@drawable/smbg" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_gravity="center"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/spacing_medium"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:maxLines="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="Image source : pexels.com"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAppearance="@style/TextAppearance.AppCompat.Caption"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/grey_40" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/spacing_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:lineSpacingExtra="@dimen/spacing_medium"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="@string/long_lorem_ipsum"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/grey_80" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/spacing_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:lineSpacingExtra="@dimen/spacing_medium"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="@string/middle_lorem_ipsum"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/grey_80"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textStyle="bold" />&ndash;&gt;-->
+
+<!--&lt;!&ndash;                <TextView&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:layout_marginTop="@dimen/spacing_large"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:lineSpacingExtra="@dimen/spacing_medium"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:text="@string/long_lorem_ipsum"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"&ndash;&gt;-->
+<!--&lt;!&ndash;                    android:textColor="@color/grey_80" />&ndash;&gt;-->
+
+<!--            </LinearLayout>-->
+
+<!--            <View-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="@dimen/spacing_large" />-->
+
+<!--        </LinearLayout>-->
+
+<!--    </androidx.core.widget.NestedScrollView>-->
+
+</FrameLayout>

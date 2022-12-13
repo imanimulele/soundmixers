@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/drawable-v24/btn_rect_teal.xml" value="0.2605" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/drawable-v24/btn_rounded_green_300.xml" value="0.2605" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/drawable-v24/btn_rounded_grey_outline.xml" value="0.2605" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2605" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/activity_about_us.xml" value="0.24270833333333333" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/activity_forgot_password.xml" value="0.3484375" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/activity_main.xml" value="0.3484375" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/activity_main_page.xml" value="0.18541666666666667" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/activity_register.xml" value="0.3578125" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/app_bar_main.xml" value="0.2953125" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/content_main.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/fragment_about.xml" value="0.22864583333333333" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/fragment_about_us.xml" value="0.2755208333333333" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/fragment_home.xml" value="0.28802083333333334" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/include_drawer_content.xml" value="0.3625" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/include_drawer_header_mail.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/layout/toolbar.xml" value="0.3614583333333333" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/menu/menu_basic.xml" value="0.29791666666666666" />
+        <entry key="..\:/Users/imanimu/Smixers/app/src/main/res/menu/menu_navigation_drawer.xml" value="0.3625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

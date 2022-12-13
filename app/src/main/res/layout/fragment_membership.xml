@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.Membership">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:scrollbars="none"
+        android:scrollingCache="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_large"
+                    android:layout_marginRight="@dimen/spacing_large"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Membership Details"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                        android:textColor="@color/grey_90"
+                        app:fontFamily="sans-serif-medium" />
+
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_mlarge"
+                        android:layout_height="@dimen/spacing_mlarge"
+                        app:srcCompat="@drawable/ic_people"
+                        app:tint="@color/grey_600" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_large">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="match_parent">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@drawable/edit_text_round_bg_outline"
+                            android:layout_marginBottom="@dimen/spacing_large"
+                            android:orientation="horizontal">
+
+                            <!--                        <com.mikhaellopez.circularimageview.CircularImageView-->
+                            <!--                            android:id="@+id/profile_image"-->
+                            <!--                            android:layout_width="120dp"-->
+                            <!--                            android:layout_height="120dp"-->
+                            <!--                            android:src="@drawable/photo_male_1"-->
+                            <!--                            app:civ_border="true"-->
+                            <!--                            app:civ_border_color="@color/grey_300"-->
+                            <!--                            app:civ_border_width="2dp"-->
+                            <!--                            app:civ_shadow="true" />-->
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentStart="true">
+
+                                <com.mikhaellopez.circularimageview.CircularImageView
+                                    android:id="@+id/imageview_account_profile"
+                                    android:layout_width="150dp"
+                                    android:layout_height="150dp"
+                                    app:civ_border="true"
+                                    app:civ_border_color="@color/grey_300"
+                                    android:layout_alignParentTop="true"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@drawable/photo_male_1"
+                                    app:civ_border_width="2dp" />
+
+                                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                                    android:id="@+id/changeImageProfile"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignEnd="@+id/imageview_account_profile"
+                                    android:layout_alignParentBottom="true"
+                                    android:layout_marginTop="1dp"
+                                    android:background="@color/grey_300"
+                                    app:backgroundTint="@color/grey_80"
+                                    app:srcCompat="@drawable/ic_edit" />
+
+                            </RelativeLayout>
+
+
+
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:paddingLeft="@dimen/spacing_large"
+                            android:id="@+id/lyt_progress"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center_horizontal"
+                            android:layout_marginHorizontal="@dimen/spacing_large"
+                            android:layout_marginLeft="@dimen/spacing_large"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_centerInParent="true"
+                            android:visibility="gone"
+                            android:layout_margin="@dimen/spacing_medium"
+                            android:orientation="vertical">
+
+                            <ProgressBar
+                                android:gravity="center_horizontal|center_vertical"
+                                android:layout_gravity="center_horizontal|center_vertical"
+                                style="@style/Widget.AppCompat.ProgressBar"
+                                android:layout_width="45dp"
+                                android:layout_height="match_parent"
+                                android:indeterminate="true" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+
+
+
+                    <EditText
+                        android:id="@+id/userName"
+                        style="@style/EditText.Flat.Grey.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xlarge"
+                        android:inputType="textCapWords"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="User name"
+                        android:minHeight="@dimen/spacing_xmlarge" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/firstName"
+                            style="@style/EditText.Flat.Grey.Small"
+                            android:layout_width="0dp"
+                            android:inputType="textCapWords"
+                            android:layout_height="@dimen/spacing_xlarge"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_round_bg_outline"
+                            android:hint="First Name"
+                            android:minHeight="@dimen/spacing_xmlarge" />
+
+
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/middleName"
+                            style="@style/EditText.Flat.Grey.Small"
+                            android:layout_width="0dp"
+                            android:inputType="textCapWords"
+                            android:layout_height="@dimen/spacing_xlarge"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_round_bg_outline"
+                            android:hint="Middle Name"
+                            android:minHeight="@dimen/spacing_xmlarge" />
+
+                        <View
+                            android:layout_width="@dimen/spacing_middle"
+                            android:layout_height="0dp" />
+
+                        <EditText
+                            android:id="@+id/lastName"
+                            style="@style/EditText.Flat.Grey.Small"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_xlarge"
+                            android:layout_weight="1"
+                            android:inputType="textCapWords"
+                            android:background="@drawable/edit_text_round_bg_outline"
+                            android:hint="Last Name"
+                            android:minHeight="@dimen/spacing_xmlarge" />
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/userTitle"
+                        style="@style/EditText.Flat.Grey.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xlarge"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:inputType="textCapWords"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="Title"
+                        android:minHeight="@dimen/spacing_xmlarge" />
+
+                    <EditText
+                        android:id="@+id/mobileNumber"
+                        style="@style/EditText.Flat.Grey.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xlarge"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:inputType="phone"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="Phone"
+                        android:minHeight="@dimen/spacing_xmlarge" />
+
+                    <EditText
+                        android:id="@+id/address"
+                        style="@style/EditText.Flat.Grey.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xlarge"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="Address"
+                        android:inputType="textCapWords"
+                        android:minHeight="@dimen/spacing_xmlarge" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/country"
+                            style="@style/EditText.Flat.Grey.Small"
+                            android:layout_width="0dp"
+                            android:layout_height="@dimen/spacing_xlarge"
+                            android:layout_weight="1"
+                            android:background="@drawable/edit_text_round_bg_outline"
+                            android:hint="Country"
+                            android:inputType="textCapWords"
+                            android:minHeight="@dimen/spacing_xmlarge" />
+
+
+
+                    </LinearLayout>
+
+                    <EditText
+                        android:id="@+id/city"
+                        style="@style/EditText.Flat.Grey.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xlarge"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="City"
+                        android:inputType="textCapWords"
+                        android:minHeight="@dimen/spacing_xmlarge" />
+
+                    <EditText
+                        android:id="@+id/state"
+                        style="@style/EditText.Flat.Grey.Small"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/spacing_xlarge"
+                        android:layout_marginTop="@dimen/spacing_middle"
+                        android:background="@drawable/edit_text_round_bg_outline"
+                        android:hint="State / Province"
+                        android:inputType="textCapWords"
+                        android:minHeight="@dimen/spacing_xmlarge" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.balysv.materialripple.MaterialRippleLayout
+                android:id="@+id/lyt_next"
+                style="@style/RippleStyleWhite"
+                android:layout_width="match_parent"
+                android:padding="@dimen/spacing_large"
+                android:layout_margin="@dimen/spacing_large"
+                android:layout_height="@dimen/spacing_xxlarge"
+                android:background="@color/grey_300">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit Data"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                        android:textColor="@android:color/white" />
+
+                    <ImageView
+                        android:layout_width="@dimen/spacing_smlarge"
+                        android:layout_height="@dimen/spacing_smlarge"
+                        android:layout_marginLeft="@dimen/spacing_medium"
+                        android:layout_marginStart="@dimen/spacing_medium"
+                        app:srcCompat="@drawable/ic_done"
+                        app:tint="@android:color/white" />
+
+                </LinearLayout>
+
+            </com.balysv.materialripple.MaterialRippleLayout>
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</FrameLayout>

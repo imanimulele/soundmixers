@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group
+        android:id="@+id/grp_2"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/nav_lesson"
+            android:icon="@drawable/ic_class"
+            android:title="Lessons"
+            />
+
+<!--        <item-->
+<!--            android:id="@+id/nav_inbox"-->
+<!--            android:icon="@drawable/ic_inbox"-->
+<!--            android:title="Inbox"-->
+<!--            />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_priority_inbox"-->
+<!--            android:icon="@drawable/ic_label"-->
+<!--            android:title="Priority inbox"-->
+<!--           />-->
+<!--        <item-->
+<!--            android:id="@+id/nav_membership"-->
+<!--            android:icon="@drawable/ic_people"-->
+<!--            android:title="Membership"-->
+<!--            />-->
+    </group>
+
+
+    <group
+        android:id="@+id/grp_5"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_person"
+            android:title="My profile" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/ic_business"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/ic_settings"
+            android:title="Settings" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help"
+            android:title="Help &amp; Feedback" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/grp_6"
+        android:checkableBehavior="single">
+        <item
+            android:iconTint="@color/material_red_a200"
+            android:icon="@drawable/ic_exit"
+            android:id="@+id/action_settings"
+            android:orderInCategory="100"
+            android:title="Logout"
+            app:showAsAction="never" />
+
+    </group>
+</menu>

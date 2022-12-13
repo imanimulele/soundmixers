@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/mobile_navigation"
+app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.smixers.ui.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+
+    <fragment
+        android:id="@+id/nav_about"
+        android:name="com.example.smixers.ui.About"
+        android:label="@string/about_us"
+        tools:layout="@layout/fragment_about" />
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.smixers.ui.Profile"
+        android:label="@string/profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_lesson"
+        android:name="com.example.smixers.lessons.LessonArticle"
+        android:label="@string/lessons"
+        tools:layout="@layout/fragment_lesson_article" />
+
+    <fragment
+        android:id="@+id/nav_inbox"
+        android:name="com.example.smixers.lessons.LessonFragment"
+        android:label="@string/lessons"
+        tools:layout="@layout/fragment_lesson">
+        <action
+            android:id="@+id/action_nav_inbox_to_nav_lessonCategory"
+            app:destination="@id/nav_lesson"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+        />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_priority_inbox"
+        android:name="com.example.smixers.lessons.CourseCategories"
+        android:label="@string/lessons"
+        tools:layout="@layout/fragment_course_categories" >
+
+        <action
+            android:id="@+id/action_nav_inbox_to_nav_classes"
+            app:destination="@id/nav_classes"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+        />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_classes"
+        android:name="com.example.smixers.lessons.Classlist"
+        android:label="@string/lessons_levels"
+        tools:layout="@layout/fragment_classlist" >
+
+        <action
+            android:id="@+id/action_nav_classes_to_nav_articles"
+            app:destination="@id/nav_lesson"
+            app:launchSingleTop="false"
+            app:popUpToInclusive="false" />
+        />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/nav_membership"
+        android:name="com.example.smixers.ui.Membership"
+        android:label="@string/lessons"
+        tools:layout="@layout/fragment_membership" />
+
+
+
+</navigation>
